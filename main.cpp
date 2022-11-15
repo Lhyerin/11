@@ -1,20 +1,13 @@
 #include <iostream>
-#include<stdio.h>
+#include <stdio.h>
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
-char *proverb="All that glisters is not gold.";
-void setPointer(char **q)
-{
-	*q=proverb;
-}
-
 int main(void) {
-	char *p ="zzz";
-	char **a=&p;
-	setPointer(a);
-	printf("%s\n",p);
-	
-	return 0;
-
+    int i = 4;
+    int *pi = &i;
+    char *pc = (char*)&i;
+    printf("%i, %i, %i\n", i, *pi, *pc);
+    
+    return 0;
 }
